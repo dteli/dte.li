@@ -1,4 +1,3 @@
-
 --------
 {-# LANGUAGE OverloadedStrings #-}
 
@@ -7,7 +6,9 @@ import Hakyll
 
 --import qualified Text.Pandoc.Options as Pandocptions        -- couldn't resist
 import qualified Text.Pandoc.Options as Pdo
-import qualified Data.Set            as Set
+
+import qualified Data.Set            as S
+import qualified Data.Map            as M
 
 -- import my color style?
 --import qualified Text.Highlighting.Kate.Types as Katetypes
@@ -61,8 +62,8 @@ main = hakyllWith configuratie $ do
         route    $ setExtension "html"
         compile  $ do
             pandocCompilerWith pandocReaderOptions pandocWriterOptions
-                >>= loadAndApplyTemplate "templates/staticcontent.html" globalContext
-                >>= loadAndApplyTemplate "templates/staticpage.html" globalContext
+                >>= loadAndApplyTemplate "templates/staticcontent.html" staticContext
+                >>= loadAndApplyTemplate "templates/staticpage.html" staticContext
                 >>= relativizeUrls
 
 
@@ -70,13 +71,12 @@ main = hakyllWith configuratie $ do
         route      idRoute
         compile  $ do
             getResourceBody
-                >>= loadAndApplyTemplate "templates/staticcontent.html" globalContext
-                >>= loadAndApplyTemplate "templates/staticpage.html" globalContext
+                >>= loadAndApplyTemplate "templates/staticcontent.html" staticContext
+                >>= loadAndApplyTemplate "templates/staticpage.html" staticContext
                 >>= relativizeUrls
 
 
     match "templates/*" $ compile $ templateCompiler
-
 
 
 --------
@@ -100,9 +100,14 @@ globalContext :: Context String
 globalContext = field "lpUrl" (\_ -> latestPostUrl)
     <> defaultContext
 
+staticContext :: Context String
+staticContext = constField "themecolor" "#F74D4D"
+    <> globalContext
+
 postContext :: Context String
 postContext = field "entries" (\_ -> recentPostList)
     <> dateField "date" "%Y %B %e"
+    <> constField "themecolor" "#872BFF"
     <> globalContext
 
 
@@ -153,7 +158,7 @@ latestPostUrl = do
 
 pandocReaderOptions :: Pdo.ReaderOptions
 pandocReaderOptions = defaultHakyllReaderOptions
-                      -- { Pdo.readerExtensions = Set.union (Pdo.readerExtensions Pdo.def) (Set.fromList [])
+                      -- { Pdo.readerExtensions = S.union (Pdo.readerExtensions Pdo.def) (S.fromList [])
                       -- { Pdo.readerExtensions = Pdo.readerExtensions Pdo.def,
                       { Pdo.readerExtensions = Pdo.pandocExtensions
                       }
@@ -166,6 +171,39 @@ pandocWriterOptions = defaultHakyllWriterOptions
                       -- , writerHTMLMathMethod = MathJax "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
                       -- , writerExtensions =  ...
                       }
+
+-- -----------------------------------------------------------
+
+
+-- txtsubs :: M.Map String String
+-- txtsubs :: M.fromList
+--     [ ("LaTeX", "<span class=\"tex\">L<sup>a</sup>T<sub>e</sub>X</span>"),
+--     ]
+
+
+--theGreatFilter :: String → String
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 -- -----------------------------------------------------------

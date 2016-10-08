@@ -1,69 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+$partial("templates/head.html")$
 
-  <head>
-    <meta charset="utf-8">
-    <title>$title$</title>
+<body>
 
-    <meta name="description" content="..">
-
-    <!-- <meta name="robots" content=""> -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="theme-color" content="#872BFF">
-
-    <link rel="stylesheet" href="/css/ss.css">
-  </head>
-
-  <body>
-
-    <main class="post">
+  <main class="post">
 
       $body$
 
-    </main>
+  </main>
 
+  <div id="asider">
+    <div class="postlist">
+      <ul>
 
+	      $entries$
 
-    <div id="asider">
-
-      <div class="postlist">
-
-	<ul>
-
-	  $entries$
-
-	</ul>
-
-      </div>
-
+      </ul>
     </div>
+  </div>
 
+  $partial("templates/overasider.html")$
 
-    <div id="overasider">
-
-    <div class="curtain">
-    </div>
-
-
-
-
-
-    <nav id="nav0">
-      <a class="bk0U" href="/index.html">dte.li</a>
-      <a class="bk0Z" href=$lpUrl$>posts</a>
-      <!-- <a class="bk0X" href="#">??</a> -->
-    </nav>
-
-
-    <!-- ..id="myleftfoot" lol -->
-    <footer id="thelastword">
-      <p>&copy; (or whatever) 2016 Eli T. Drumm</p>
-      <p>made with Hakyll and <a href="/ntc.html">other technologies</a></p>
-    </footer>
-
-
-    </div>
-
-  </body>
+</body>

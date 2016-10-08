@@ -1,74 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+$partial("templates/head.html")$
 
-  <head>
-    <meta charset="utf-8">
-    <title>$title$</title>
+<body>
 
-    <meta name="description" content="..">
+  <main class=$if(staticid)$
+                "core $staticid$"
+              $else$
+                "core"
+              $endif$>
+    $body$
+  </main>
 
-    <!-- <meta name="robots" content=""> -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="theme-color" content="#F74D4D">
-
-    <link rel="stylesheet" href="/css/ss.css">
-  </head>
-
-  <body>
-
-    <main class=$if(staticid)$
-                  "core $staticid$"
-                $else$
-                  "core"
-                $endif$>
-
-      $body$
-
-    </main>
-
-
-
-    <div id="asider">
-      <nav id="corenav">
-
-	<h2><a href="/about.html">about</a></h2>
-
-	<!-- <h2><a href="#">cv</a></h2> -->
-
-	<!-- <h2><a href="/profiles.html">profiles</a></h2> -->
-
-	<!-- <h2><a href="#">art</a></h2> -->
-
-	<h2><a href="/contact.html">contact</a></h2>
-      </nav>
-    </div>
-
-
-
-
-
-
-    <div id="overasider">
-
-      <div class="curtain">
-      </div>
-
-
-    <nav id="nav0">
-      <a class="bk0U" href="/index.html">dte.li</a>
-      <a class="bk0Z" href=$lpUrl$>posts</a>
-      <!-- <a class="bk0X" href="#">??</a> -->
+  <div id="asider">
+    <nav id="corenav">
+	    <h2><a href="/about.html">about</a></h2>
+	    <!-- <h2><a href="#">cv</a></h2> -->
+	    <!-- <h2><a href="/profiles.html">profiles</a></h2> -->
+      <!-- <h2><a href="#">art</a></h2> -->
+      <h2><a href="/contact.html">contact</a></h2>
     </nav>
+  </div>
 
-    <!-- ..id="myleftfoot" lol -->
-    <footer id="thelastword">
-      <p>&copy; (or whatever) 2016 Eli T. Drumm</p>
-      <p>made with Hakyll and <a href="/ntc.html">other technologies</a></p>
-    </footer>
+  $partial("templates/overasider.html")$
 
-    </div>
-
-
-  </body>
+</body>
