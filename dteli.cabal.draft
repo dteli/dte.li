@@ -1,0 +1,27 @@
+name:  dteli
+version:  3.6
+build-type:  Simple
+-- license:
+-- license-file:
+-- copyright:
+-- author: 
+-- homepage:
+-- synopsis:
+-- description:
+-- category:
+cabal-version:  >=1.2
+
+
+executable dteli
+  main-is:  dteli.hs
+  build-depends: base
+               , hakyll
+               , pandoc
+               , containers
+
+
+
+
+
+-- reference:
+-- https://www.haskell.org/cabal/users-guide/developing-packages.html

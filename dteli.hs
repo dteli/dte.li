@@ -153,8 +153,10 @@ latestPostUrl = do
 
 pandocReaderOptions :: Pdo.ReaderOptions
 pandocReaderOptions = defaultHakyllReaderOptions
---                      { Pdo.readerExtensions = Set.union (Pdo.readerExtensions Pdo.def) (Set.fromList [])
---                      }
+                      -- { Pdo.readerExtensions = Set.union (Pdo.readerExtensions Pdo.def) (Set.fromList [])
+                      -- { Pdo.readerExtensions = Pdo.readerExtensions Pdo.def,
+                      { Pdo.readerExtensions = Pdo.pandocExtensions
+                      }
 
 
 pandocWriterOptions :: Pdo.WriterOptions

@@ -334,6 +334,19 @@ footer#thelastword {
   footer#thelastword p {
     margin: 0; }
 
+.tex sub {
+  text-transform: uppercase;
+  font-size: 1em;
+  vertical-align: -0.1ex;
+  margin-left: -0.15em;
+  margin-right: -0.15em; }
+.tex sup {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  vertical-align: -0.2em;
+  margin-left: -0.45em;
+  margin-right: -0.15em; }
+
 .bk0U {
   background-color: #f74d4d; }
 
