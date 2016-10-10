@@ -2,8 +2,6 @@
  * ss.scss
  *
  */
-@import url(normalize.css);
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,900,900italic|Inconsolata:400,700);
 /*
  * _kleuren.scss
  *
@@ -30,6 +28,8 @@
 /* $artcolor: rgb(43, 255, 135); */
 /* $contactcolor: rgb(43, 160, 203); */
 /* $postscolor: rgb(135, 43, 255); */
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,900,900italic|Inconsolata:400,700);
+@import url(normalize.css);
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -279,9 +279,7 @@ nav#corenav a:hover {
   padding: 0;
   border: 0;
   pointer-events: none;
-  flex: 1 0 0%;
-  /* generated 2016-03-19 */
-  /* same with "maximize compatibility" */ }
+  flex: 1 0 0%; }
 
 div#overasider {
   position: fixed;
@@ -346,6 +344,22 @@ footer#thelastword {
   vertical-align: -0.2em;
   margin-left: -0.45em;
   margin-right: -0.15em; }
+
+.bluemph {
+  color: #22F;
+  text-shadow: -0.1rem 0.1rem 0 #666;
+  font-style: italic; }
+
+.redmph {
+  color: #F22;
+  text-shadow: 0.1rem -0.1rem 0 #666;
+  font-style: italic; }
+
+.bgc-core {
+  background-color: #f74d4d; }
+
+.bgc-post {
+  background-color: #872bff; }
 
 .bk0U {
   background-color: #f74d4d; }

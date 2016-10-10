@@ -4,16 +4,15 @@
  */
 
 // IMPORTS ======================================
-@import "normalize.css";
-
-// @import [FONTS];               // Merriweather, Merriweather Sans, Inconsolata..
-//@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,900|Inconsolata:400,700&subset=latin,latin-ext);
-//@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,900,400italic,300,900italic,700italic,300italic|Inconsolata:400,700);
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,900,900italic|Inconsolata:400,700);
 
 @import "kleuren";
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,900,900italic|Inconsolata:400,700);
+
 // ==============================================
 
+
+@import "normalize.css";
 
 
 html {
@@ -460,23 +459,6 @@ nav#corenav {
   pointer-events: none;
   flex: 1 0 0%;
 
-
-    /* generated 2016-03-19 */
-    // background: -moz-linear-gradient(top,  hsla(0,0%,2%,0) 0%, hsla(0,0%,2%,0) 60%, hsla(0,0%,2%,1) 100%); /* FF3.6-15 */
-    // background: -webkit-linear-gradient(top,  hsla(0,0%,2%,0) 0%,hsla(0,0%,2%,0) 60%,hsla(0,0%,2%,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    // background: linear-gradient(to bottom,  hsla(0,0%,2%,0) 0%,hsla(0,0%,2%,0) 60%,hsla(0,0%,2%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060606', endColorstr='#060606',GradientType=0 ); /* IE6-9 */
-
-  /* same with "maximize compatibility" */
-  // background: -moz-linear-gradient(top,  hsla(0,0%,2%,0) 0%, hsla(0,0%,2%,0) 60%, hsla(0,0%,2%,1) 100%); /* FF3.6-15 */
-  // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,hsla(0,0%,2%,0)), color-stop(60%,hsla(0,0%,2%,0)), color-stop(100%,hsla(0,0%,2%,1))); /* Chrome4-9,Safari4-5 */
-  // background: -webkit-linear-gradient(top,  hsla(0,0%,2%,0) 0%,hsla(0,0%,2%,0) 60%,hsla(0,0%,2%,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  // background: -o-linear-gradient(top,  hsla(0,0%,2%,0) 0%,hsla(0,0%,2%,0) 60%,hsla(0,0%,2%,1) 100%); /* Opera 11.10-11.50 */
-  // background: -ms-linear-gradient(top,  hsla(0,0%,2%,0) 0%,hsla(0,0%,2%,0) 60%,hsla(0,0%,2%,1) 100%); /* IE10 preview */
-  // background: linear-gradient(to bottom,  hsla(0,0%,2%,0) 0%,hsla(0,0%,2%,0) 60%,hsla(0,0%,2%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060606', endColorstr='#060606',GradientType=0 ); /* IE6-9 */
-
-
 }
 
 
@@ -569,7 +551,7 @@ footer#thelastword {
 
 
 
-
+@import "faces";
 
 
 

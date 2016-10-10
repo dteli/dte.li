@@ -1,0 +1,33 @@
+//
+// custom text stylings (just in case)
+
+
+.bluemph {
+  color: #22F;
+  text-shadow: -0.1rem 0.1rem 0 #666;
+  font-style: italic;
+}
+
+.redmph {
+  color: #F22;
+  text-shadow: 0.1rem -0.1rem 0 #666;
+  font-style: italic;
+}
+
+
+
+//==================
+
+.bgc-core {
+  background-color: $k0U;
+}
+
+.bgc-post {
+  background-color: $k0Z;
+}
+
+
+// .sc {
+//   font-variant: small-caps;
+// }
+
