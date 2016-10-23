@@ -19,15 +19,10 @@ I studied cognitive science and philosophy (of logic, science) at Indiana Univer
 from '07 through '011.
 From mid-2013 to early '016 I lived in the Netherlands
 pursuing a [MSc in Logic][] at the University of Amsterdam,
-which I recently completed.
-I'm now living in the Ithaca, NY area.
+which I recently completed ([relevant reading for all your free time](https://dl.dropboxusercontent.com/u/2280103/dteli/rmtc.pdf "RMTC"))
 
-<!--
-Recently my partner/fiancée/bestie and I moved to Ithaca, NY,
-as she  started working with the
-[New York Folklore Society](http://www.nyfolklore.org/) as a
-Professional Folklorist.
--->
+
+I'm now living in the Ithaca, NY area.
 
 
 
