@@ -4,14 +4,14 @@
  */
 
 
-// < 1350px wide
+// 900px < width <= 1350px
 
 @media (max-width: 1350px) and (min-width: 900px) {
 
 
     main {
       flex: 0 1 70%;
-     
+
 
       h1 {
         padding: 0 4rem 0;
@@ -28,11 +28,11 @@
       ul ul {
         padding: 0rem 2.4rem;
       }
-    
+
       h3 {
         padding: 0 4rem 0;
       }
-     
+
     }
 
     div#overasider {
@@ -65,7 +65,7 @@
 
 
 
-// < 900px wide ..mobile?
+// width <= 900px
 
 @media (max-width: 900px) {
 
