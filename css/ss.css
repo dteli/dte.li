@@ -130,9 +130,16 @@ article {
   font-size: 1.8rem; }
   article h1 {
     font-size: 6rem; }
+  article h2 {
+    max-width: 80rem;
+    margin: 2.4rem auto 1rem;
+    padding: 0 2rem 0;
+    font-size: 3.6rem; }
   article h3 {
     margin-top: 0;
     margin-bottom: 2rem; }
+    article h3 + h2 {
+      margin-top: 1rem; }
   article p {
     max-width: 80rem;
     margin: 1rem auto 1rem;
@@ -387,7 +394,7 @@ footer#thelastword {
 @media (max-width: 1350px) and (min-width: 900px) {
   main {
     flex: 0 1 70%; }
-    main h1 {
+    main h1, main h2, main h3 {
       padding: 0 4rem 0; }
     main p {
       padding: 0.4rem 4rem; }
@@ -395,8 +402,6 @@ footer#thelastword {
       padding: 1rem 6rem; }
     main ul ul {
       padding: 0rem 2.4rem; }
-    main h3 {
-      padding: 0 4rem 0; }
 
   div#overasider {
     width: 30%; }
@@ -417,6 +422,8 @@ footer#thelastword {
 
   main h1 {
     font-size: 10vw; }
+  main h2 {
+    font-size: 8vw; }
   main dl dt {
     width: 100%;
     margin: 0.5rem 0 0 0;
