@@ -323,6 +323,15 @@ article {
       }
 
 
+      audio {
+        display: block;
+        max-width: 80rem;
+        width: 100%;
+        margin: 1rem auto 1rem;
+        padding: 0 2rem;
+      }
+
+
       footer {
         margin: 3.2rem auto 1rem;
         padding: 0 2rem;
@@ -368,6 +377,10 @@ main.post {
       h1 {
         text-shadow: -0.2rem 0.2rem 0 $k0Z;
       }
+
+      /* audio { */
+      /*   box-shadow: -0.2rem 0.2rem 0 $k0Z; */
+      /* } */
 
 }
 

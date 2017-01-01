@@ -19,7 +19,7 @@ I studied cognitive science and philosophy (of logic, science) at Indiana Univer
 from '07 through '011.
 From mid-2013 to early '016 I lived in the Netherlands
 pursuing a [MSc in Logic][] at the University of Amsterdam,
-which I recently completed ([relevant reading for all your free time](https://dl.dropboxusercontent.com/u/2280103/dteli/rmtc.pdf "RMTC"))
+which I recently completed ([relevant reading for all your free time](https://dl.dropboxusercontent.com/u/2280103/dteli/rmtc.pdf "RMTC")).
 
 
 I'm now living in the Ithaca, NY area.
