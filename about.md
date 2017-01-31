@@ -22,7 +22,7 @@ pursuing a [MSc in Logic][] at the University of Amsterdam,
 which I recently completed ([relevant reading for all your free time](https://dl.dropboxusercontent.com/u/2280103/dteli/rmtc.pdf "RMTC")).
 
 
-I'm now living in the Ithaca, NY area.
+After returning to the US I lived in the Ithaca, NY area for awhile; currently I'm back around Indianapolis until I embark on Whatever Comes Next.
 
 
 
