@@ -107,7 +107,7 @@ main {
     width: 60%;
     height: auto; }
   main figure {
-    margin: 2rem 0 2rem;
+    margin: 3.6rem 0 3.6rem;
     padding: 0; }
   main dl {
     font-size: 2.4rem; }
@@ -130,9 +130,16 @@ article {
   font-size: 1.8rem; }
   article h1 {
     font-size: 6rem; }
+  article h2 {
+    max-width: 80rem;
+    margin: 2.4rem auto 1rem;
+    padding: 0 2rem 0;
+    font-size: 3.6rem; }
   article h3 {
     margin-top: 0;
     margin-bottom: 2rem; }
+    article h3 + h2 {
+      margin-top: 1rem; }
   article p {
     max-width: 80rem;
     margin: 1rem auto 1rem;
@@ -188,6 +195,12 @@ article {
   article figure {
     max-width: 80rem;
     margin: 2rem auto 2rem; }
+  article audio {
+    display: block;
+    max-width: 80rem;
+    width: 100%;
+    margin: 1rem auto 1rem;
+    padding: 0 2rem; }
   article footer {
     margin: 3.2rem auto 1rem;
     padding: 0 2rem;
@@ -212,8 +225,30 @@ main.index {
 main.core h1 {
   text-shadow: -0.2rem 0.2rem 0 #f74d4d; }
 
-main.post h1 {
-  text-shadow: -0.2rem 0.2rem 0 #872bff; }
+main.post {
+  /* audio { */
+  /*   box-shadow: -0.2rem 0.2rem 0 $k0Z; */
+  /* } */ }
+  main.post h1 {
+    text-shadow: -0.2rem 0.2rem 0 #872bff; }
+
+div.buttonbox {
+  max-width: 80rem;
+  display: flex;
+  margin: 2.4rem auto 2.4rem;
+  padding: 0 8rem; }
+  div.buttonbox a {
+    font-family: inherit;
+    line-height: 1.6rem;
+    flex-grow: 1;
+    background: none;
+    border: none;
+    text-align: center; }
+    div.buttonbox a span.buttontitle {
+      font-size: larger;
+      font-weight: bold; }
+    div.buttonbox a:hover {
+      color: #888888; }
 
 div#asider {
   /* position: absolute; */
@@ -396,7 +431,7 @@ footer#thelastword {
 @media (max-width: 1350px) and (min-width: 900px) {
   main {
     flex: 0 1 70%; }
-    main h1 {
+    main h1, main h2, main h3 {
       padding: 0 4rem 0; }
     main p {
       padding: 0.4rem 4rem; }
@@ -404,8 +439,8 @@ footer#thelastword {
       padding: 1rem 6rem; }
     main ul ul {
       padding: 0rem 2.4rem; }
-    main h3 {
-      padding: 0 4rem 0; }
+    main audio {
+      padding: 0 4rem; }
 
   div#overasider {
     width: 30%; }
@@ -426,6 +461,8 @@ footer#thelastword {
 
   main h1 {
     font-size: 10vw; }
+  main h2 {
+    font-size: 8vw; }
   main dl dt {
     width: 100%;
     margin: 0.5rem 0 0 0;

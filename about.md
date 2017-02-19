@@ -19,15 +19,10 @@ I studied cognitive science and philosophy (of logic, science) at Indiana Univer
 from '07 through '011.
 From mid-2013 to early '016 I lived in the Netherlands
 pursuing a [MSc in Logic][] at the University of Amsterdam,
-which I recently completed.
-I'm now living in the Ithaca, NY area.
+which I recently completed ([relevant reading for all your free time](https://dl.dropboxusercontent.com/u/2280103/dteli/rmtc.pdf "RMTC")).
 
-<!--
-Recently my partner/fiancée/bestie and I moved to Ithaca, NY,
-as she  started working with the
-[New York Folklore Society](http://www.nyfolklore.org/) as a
-Professional Folklorist.
--->
+
+After returning to the US I lived in the Ithaca, NY area for awhile; currently I'm back around Indianapolis until I embark on Whatever Comes Next.
 
 
 
@@ -37,12 +32,12 @@ I have a cat named Atsuo Toggle.
 <!-- {.leftsideimg} -->
 
 
-Recently my partner and I adopted a puppy named Archie
-(after [this guy](https://en.wikipedia.org/wiki/Archie_Green "Archie")
-and [this guy](http://memory-alpha.wikia.com/wiki/Jonathan_Archer "Archer")
-and [this distro](https://www.archlinux.org/ "Arch")).
-He's a fluffier-than-average lab mix and he would love to meet you if you're in the neighborhood.
-![](https://dl.dropboxusercontent.com/u/2280103/dteli/images/ar00a.gif "A.W."){.atgiftest}
+<!-- Recently my partner and I adopted a puppy named Archie -->
+<!-- (after [this guy](https://en.wikipedia.org/wiki/Archie_Green "Archie") -->
+<!-- and [this guy](http://memory-alpha.wikia.com/wiki/Jonathan_Archer "Archer") -->
+<!-- and [this distro](https://www.archlinux.org/ "Arch")). -->
+<!-- He's a fluffier-than-average lab mix and he would love to meet you if you're in the neighborhood. -->
+<!-- ![](https://dl.dropboxusercontent.com/u/2280103/dteli/images/ar00a.gif "A.W."){.atgiftest} -->
 
 
 
