@@ -58,7 +58,7 @@ main = hakyllWith configuratie $ do
                 >>= relativizeUrls
 
 
-    match ("about.md" .||. "ntc.md" .||. "tapas.md") $ do
+    match ("about.md" .||. "ntc.md" .||. "tapas.md" .||. "rte.md") $ do
         route    $ setExtension "html"
         compile  $ do
             pandocCompilerWith pandocReaderOptions pandocWriterOptions
