@@ -58,12 +58,40 @@ main = hakyllWith configuratie $ do
                 >>= relativizeUrls
 
 
-    match ("about.md" .||. "ntc.md" .||. "tapas.md" .||. "rte.md") $ do
+    match ("about.md" .||. "rte.md") $ do
         route    $ setExtension "html"
         compile  $ do
             pandocCompilerWith pandocReaderOptions pandocWriterOptions
                 >>= loadAndApplyTemplate "templates/staticcontent.html" staticContext
                 >>= loadAndApplyTemplate "templates/staticpage.html" staticContext
+                >>= relativizeUrls
+
+
+    -- match (    ) $ do                               -- tapas.md
+    --     route    $ setExtension "html"
+    --     compile  $ do
+    --         pandocCompilerWith pandocReaderOptions pandocWriterOptions
+    --             >>= loadAndApplyTemplate "templates/barecontent.html" yieldContext
+    --             >>= loadAndApplyTemplate "templates/yieldpage.html" yieldContext
+    --             >>= relativizeUrls
+
+
+    -- match (    ) $ do
+    --     route    $ setExtension "html"
+    --     compile  $ do
+    --         pandocCompilerWith pandocReaderOptions pandocWriterOptions
+    --             >>= loadAndApplyTemplate "templates/protobankcontent.html" protobankContext
+    --             >>= loadAndApplyTemplate "templates/protobankpage.html" protobankContext
+    --             >>= relativizeUrls
+
+
+
+    match ("ntc.md" ) $ do
+        route    $ setExtension "html"
+        compile  $ do
+            pandocCompilerWith pandocReaderOptions pandocWriterOptions
+                >>= loadAndApplyTemplate "templates/barecontent.html" siteContext
+                >>= loadAndApplyTemplate "templates/sitepage.html" siteContext
                 >>= relativizeUrls
 
 
@@ -79,20 +107,7 @@ main = hakyllWith configuratie $ do
     match "templates/*" $ compile $ templateCompiler
 
 
---------
 
--- staticContext :: Context String
--- staticContext = field "lpUrl" (\_ -> latestPostUrl)
---     <> defaultContext
-
--- -- indexContext :: Context String
--- -- indexContext = constField "title" "dte.li" `mappend` staticContext
-
--- postContext :: Context String
--- postContext = field "entries" (\_ -> recentPostList)
---     <> field "lpUrl" (\_ -> latestPostUrl)
---     <> dateField "date" "%Y %B %e"
---     <> defaultContext
 
 -- ===========================================================
 
@@ -102,6 +117,18 @@ globalContext = field "lpUrl" (\_ -> latestPostUrl)
 
 staticContext :: Context String
 staticContext = constField "themecolor" "#F74D4D"
+    <> globalContext
+
+yieldContext :: Context String
+yieldContext = constField "themecolor" "#FF872B"
+    <> globalContext
+
+protobankContext :: Context String
+protobankContext = constField "themecolor" "#2BFF87"
+    <> globalContext
+
+siteContext :: Context String
+siteContext = constField "themecolor" "#2BA0CB"
     <> globalContext
 
 postContext :: Context String

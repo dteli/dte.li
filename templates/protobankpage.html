@@ -1,0 +1,31 @@
+$partial("templates/head.html")$
+
+<body>
+
+<!-- ... -->
+
+  <main class=$if(protobankid)$
+                "protobank $protobankid$"
+              $else$
+                "protobank"
+              $endif$>
+      
+    $body$
+
+  </main>
+  
+
+  <div id="asider">
+    <h2><a href="#">(index)</a></h2>
+    
+    <!-- ... -->
+
+    <!-- GENERATE INDEX OF LISTS -->
+
+    <!-- ... -->
+    
+  </div>
+
+  $partial("templates/overasider.html")$
+
+</body>

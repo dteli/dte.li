@@ -278,11 +278,14 @@ article {
         color: $k01;
         background-color: $k00;    // #303030;
 
+        overflow: auto;  // display scrollbar
+        //white-space: pre-wrap;  // wrap pretext
+
             code {
               display: block;
               max-width: 80rem;
-              margin: 0 auto;
-              padding: 0 2rem;
+              margin: 0;
+              padding: 0;
             }
 
       }
@@ -320,8 +323,18 @@ article {
       figure {
         max-width: 80rem;
         margin: 2rem auto 2rem;
+
+        .graph {
+          margin: 0;
+          padding: 0;
+          color: $k01;
+          background-color: $k00;
+        }
+        
       }
 
+
+      
 
       audio {
         display: block;

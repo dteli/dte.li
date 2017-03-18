@@ -167,12 +167,13 @@ article {
     padding: 2rem;
     width: 100%;
     color: #f8f8f8;
-    background-color: #060606; }
+    background-color: #060606;
+    overflow: auto; }
     article pre code {
       display: block;
       max-width: 80rem;
-      margin: 0 auto;
-      padding: 0 2rem; }
+      margin: 0;
+      padding: 0; }
   article blockquote {
     display: block;
     margin: 2rem 0;
@@ -195,6 +196,11 @@ article {
   article figure {
     max-width: 80rem;
     margin: 2rem auto 2rem; }
+    article figure .graph {
+      margin: 0;
+      padding: 0;
+      color: #f8f8f8;
+      background-color: #060606; }
   article audio {
     display: block;
     max-width: 80rem;
