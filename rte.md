@@ -1,6 +1,7 @@
 ---
 title: routes
 author: Eli T. Drumm
+sector: self
 ---
 <!-- backgrounds and playgrounds -->
 

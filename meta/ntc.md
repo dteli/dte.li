@@ -1,6 +1,7 @@
 ---
 title: n-t-c
 author: Eli T. Drumm
+sector: site
 ---
 
 # metaabout

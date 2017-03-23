@@ -1,6 +1,7 @@
 ---
 title: about
 author: Eli T. Drumm
+sector: self
 ---
 
 # about

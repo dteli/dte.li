@@ -67,7 +67,7 @@ main = hakyllWith configuratie $ do
                 >>= relativizeUrls
 
 
-    -- match (    ) $ do                               -- tapas.md
+    -- match (    ) $ do             -- yindex, scrawls, ..  mixes, tapas
     --     route    $ setExtension "html"
     --     compile  $ do
     --         pandocCompilerWith pandocReaderOptions pandocWriterOptions
@@ -86,7 +86,8 @@ main = hakyllWith configuratie $ do
 
 
 
-    match ("meta/ntc.md" .||. "meta/to-implement.md") $ do
+--  match ("meta/ntc.md" .||. "meta/to-implement.md") $ do
+    match ("meta/*.md") $ do
         route    $ setExtension "html"
         compile  $ do
             pandocCompilerWith pandocReaderOptions pandocWriterOptions
@@ -94,8 +95,9 @@ main = hakyllWith configuratie $ do
                 >>= loadAndApplyTemplate "templates/sitepage.html" siteContext
                 >>= relativizeUrls
 
+--    match ("meta/*.html") $ do
 
-    match ("index.html" .||. "contact.html") $ do   --profiles.html
+    match ("index.html" .||. "contact.html") $ do
         route      idRoute
         compile  $ do
             getResourceBody
@@ -135,6 +137,7 @@ postContext :: Context String
 postContext = field "entries" (\_ -> recentPostList)
     <> dateField "date" "%Y %B %e"
     <> constField "themecolor" "#872BFF"
+    <> constField "sector" "posts"
     <> globalContext
 
 
