@@ -10,7 +10,7 @@
 /* #FA8585 */
 /* #FF872B */
 /* #FFAD6E */
-/* #FFFB18 */
+/* #FFED47 */
 /* #FFFD9C */
 /* #2BFF87 */
 /* #A1FFCA */
@@ -73,6 +73,11 @@ main {
     padding: 0 2rem 0;
     font-size: 10rem;
     font-weight: 900; }
+  main h2 {
+    max-width: 80rem;
+    margin: 2.4rem auto 1rem;
+    padding: 0 2rem 0;
+    font-size: 3.6rem; }
   main h3 {
     color: #888888;
     max-width: 80rem;
@@ -86,6 +91,22 @@ main {
     font-size: 2rem; }
   main h1 + p {
     padding-top: 0; }
+  main ul {
+    max-width: 75rem;
+    margin: 1rem auto 1rem;
+    padding: 0 1rem 0 2.2rem;
+    list-style-type: none; }
+    main ul li {
+      margin-bottom: 1rem;
+      padding-left: 2.2rem;
+      text-indent: -2.2rem; }
+    main ul li:before {
+      content: '\25E5';
+      margin-right: 1rem; }
+  main ul ul {
+    margin: 0.4rem auto 0; }
+    main ul ul li:before {
+      content: '\25B9'; }
   main img {
     display: block;
     margin: 2rem 0;
@@ -109,6 +130,9 @@ main {
   main figure {
     margin: 3.6rem 0 3.6rem;
     padding: 0; }
+  main figcaption {
+    padding: 0 2.4rem;
+    font-style: italic; }
   main dl {
     font-size: 2.4rem; }
     main dl dt {
@@ -231,10 +255,14 @@ main.index {
 main.core h1 {
   text-shadow: -0.2rem 0.2rem 0 #f74d4d; }
 
+main.yield h1 {
+  text-shadow: -0.2rem 0.2rem 0 #ff872b; }
+
+main.site h1 {
+  text-shadow: -0.2rem 0.2rem 0 #2ba0cb; }
+
 main.post {
-  /* audio { */
-  /*   box-shadow: -0.2rem 0.2rem 0 $k0Z; */
-  /* } */ }
+  /* audio { box-shadow: -0.2rem 0.2rem 0 $k0Z; } */ }
   main.post h1 {
     text-shadow: -0.2rem 0.2rem 0 #872bff; }
 
@@ -256,7 +284,7 @@ div.buttonbox {
     div.buttonbox a:hover {
       color: #888888; }
 
-div#asider {
+#asider {
   /* position: absolute; */
   /* top: 0; */
   /* left: 0; */
@@ -265,39 +293,41 @@ div#asider {
   font-size: 2em;
   text-align: right;
   color: #f8f8f8; }
-  div#asider a {
+  #asider a {
     /* display: block; */
     /* margin-bottom: 2rem; */ }
-
-nav#corenav h2 {
-  margin: 0 0 0.5em;
-  font-size: 3.6rem;
-  font-weight: 400; }
-nav#corenav a {
-  color: #f8f8f8; }
-nav#corenav a:hover {
-  color: #f74d4d; }
-
-.postlist h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 2.4rem;
-  font-weight: 400; }
-.postlist h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #888888; }
-.postlist a {
-  margin: 0; }
-.postlist a:hover {
-  color: #872bff; }
-.postlist ul {
-  margin-top: 0;
-  margin-bottom: 0; }
-.postlist li {
-  margin-bottom: 2rem; }
+  #asider h2 {
+    margin: 0 0 0.5em;
+    font-size: 3.6rem;
+    font-weight: 400; }
+  #asider a {
+    color: #f8f8f8; }
+  #asider #corenav a:hover {
+    color: #f74d4d; }
+  #asider #yieldnav a:hover {
+    color: #ff872b; }
+  #asider #sitenav a:hover {
+    color: #2ba0cb; }
+  #asider #postlist h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.4rem;
+    font-weight: 400; }
+  #asider #postlist h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #888888; }
+  #asider #postlist a {
+    margin: 0; }
+  #asider #postlist a:hover {
+    color: #872bff; }
+  #asider #postlist ul {
+    margin-top: 0;
+    margin-bottom: 0; }
+  #asider #postlist li {
+    margin-bottom: 2rem; }
 
 .curtain {
   background: -moz-linear-gradient(top, rgba(6, 6, 6, 0) 0%, rgba(6, 6, 6, 0) 60%, #060606 100%);
@@ -409,7 +439,7 @@ footer#thelastword {
   background-color: #ff872b; }
 
 .bk0W {
-  background-color: #fffb18; }
+  background-color: #ffed47; }
 
 .bk0X {
   background-color: #2bff87; }
@@ -421,15 +451,15 @@ footer#thelastword {
   background-color: #872bff; }
 
 /* // issues with smoothness/ease of blurin-blurout
-.fuzzover {
-  color: hsla(0, 0%, 0%, 0);
-  text-shadow: 0px 0px 0rem $k01;
-  transition: text-shadow 0.5s ease;
-}
-.fuzzover:hover {
-  text-shadow: 0px 0px 0.05rem $k01;
-}
-*/
+   .fuzzover {
+   color: hsla(0, 0%, 0%, 0);
+   text-shadow: 0px 0px 0rem $k01;
+   transition: text-shadow 0.5s ease;
+   }
+   .fuzzover:hover {
+   text-shadow: 0px 0px 0.05rem $k01;
+   }
+ */
 /*
  * _media.scss
  *

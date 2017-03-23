@@ -42,7 +42,7 @@ main = hakyllWith configuratie $ do
     match "css/*.css" $ do
         route       idRoute
         compile   $ getResourceString
-                >>= withItemBody (unixFilter "/home/winfield/.npm-global/bin/postcss" ["--use", "autoprefixer"])
+                 >>= withItemBody (unixFilter "/home/winfield/.node_modules/bin/postcss" ["--use", "autoprefixer"])
                 >>= return . fmap compressCss
 
     match "posts/*.md" $ do
@@ -86,7 +86,7 @@ main = hakyllWith configuratie $ do
 
 
 
-    match ("ntc.md" ) $ do
+    match ("meta/ntc.md" .||. "meta/to-implement.md") $ do
         route    $ setExtension "html"
         compile  $ do
             pandocCompilerWith pandocReaderOptions pandocWriterOptions
