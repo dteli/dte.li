@@ -4,14 +4,11 @@
 import Data.Monoid (mappend, (<>))
 import Hakyll
 
---import qualified Text.Pandoc.Options as Pandocptions        -- couldn't resist
+
 import qualified Text.Pandoc.Options as Pdo
 
 import qualified Data.Set            as S
 import qualified Data.Map            as M
-
--- import my color style?
---import qualified Text.Highlighting.Kate.Types as Katetypes
 
 --------
 
@@ -23,11 +20,11 @@ configuratie = defaultConfiguration
               previewPort = 8448
             }
 
+-- ===========================================================
+
 main :: IO ()
 main = hakyllWith configuratie $ do
 
-
--- ===========================================================
 
     match ("images/*" .||. "aanvullend/*") $ do
         route    idRoute
@@ -37,13 +34,12 @@ main = hakyllWith configuratie $ do
         route    idRoute
         compile  copyFileCompiler
 
--- ===========================================================
-
     match "css/*.css" $ do
         route       idRoute
         compile   $ getResourceString
                  >>= withItemBody (unixFilter "/home/winfield/.node_modules/bin/postcss" ["--use", "autoprefixer"])
                 >>= return . fmap compressCss
+
 
     match "posts/*.md" $ do
         route    $ setExtension "html"
@@ -95,7 +91,13 @@ main = hakyllWith configuratie $ do
                 >>= loadAndApplyTemplate "templates/sitepage.html" siteContext
                 >>= relativizeUrls
 
---    match ("meta/*.html") $ do
+    match ("meta/*.html") $ do
+        route      idRoute
+        compile  $ do
+            getResourceBody
+                >>= loadAndApplyTemplate "templates/barecontent.html" siteContext
+                >>= loadAndApplyTemplate "templates/sitepage.html" siteContext
+                >>= relativizeUrls      
 
     match ("index.html" .||. "contact.html") $ do
         route      idRoute
@@ -125,9 +127,10 @@ yieldContext :: Context String
 yieldContext = constField "themecolor" "#FF872B"
     <> globalContext
 
-protobankContext :: Context String
-protobankContext = constField "themecolor" "#2BFF87"
-    <> globalContext
+-- protobankContext :: Context String
+-- protobankContext = field "listlist" (\_ ->  protobankIndex  )
+--     <> constField "themecolor" "#2BFF87"
+--     <> globalContext
 
 siteContext :: Context String
 siteContext = constField "themecolor" "#2BA0CB"
@@ -142,7 +145,6 @@ postContext = field "entries" (\_ -> recentPostList)
 
 
 
-
 -- ===========================================================
 
 
@@ -154,7 +156,6 @@ recentPosts :: Compiler [Item String]
 recentPosts = do
     identifiers <- getMatches "posts/*.md"
     return [Item identifier "" | identifier <- identifiers]
-
 
 
 
@@ -173,17 +174,6 @@ latestPostUrl = do
     return lpUrl
 
 -- ==========================================================
-
-
-
---autoprefixer :: Compiler String
---autoprefixer = getResourceString >>= withItemBody (unixFilter "autoprefixer" [])
-
-
-
-
--- ===========================================================
--- ===========================================================
 
 
 pandocReaderOptions :: Pdo.ReaderOptions
@@ -205,95 +195,4 @@ pandocWriterOptions = defaultHakyllWriterOptions
 -- -----------------------------------------------------------
 
 
--- txtsubs :: M.Map String String
--- txtsubs :: M.fromList
---     [ ("LaTeX", "<span class=\"tex\">L<sup>a</sup>T<sub>e</sub>X</span>"),
---     ]
-
-
---theGreatFilter :: String → String
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- -----------------------------------------------------------
-
-
--- csl, bib
--- match "references.bib" $ compile biblioCompiler
--- match "ieee-trigraph.csl" $ compile cslCompiler
---   (alt. "ieee-with-url.csl")
---   (include [..].csl in etc directory?
---    or is that incompatible with routing etc/* above?)
-
-
--- -----------------------------------------------------------
-
--- tags, categories
-
-
--- -----------------------------------------------------------
-
-
--- feed config?
-
--- comment system?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- -----------------------------------------------------------
-
--- v2palette :: Style
--- v2palette = Style {
---     backgroundColor = toColor "#060606"
---   , defaultColor = toColor "#F8F8F8"
---   , lineNumberColor = toColor "#888888"
---   , lineNumberBackgroundColor = Nothing
---   , tokenStyles =
---     [ (KeywordTok, defStyle{ tokenColor = toColor "#F74D4D", tokenBold = True })
---     , (DataTypeTok, defStyle{ tokenColor = toColor "#FA8585" })
---     , (DecValTok, defStyle{ tokenColor = toColor "#FF872B" })
---     , (BaseNTok, defStyle{ tokenColor = toColor "#FFAD6E" })
---     , (FloatTok, defStyle{ tokenColor = toColor "#FFFB18" })
---     , (CharTok, defStyle{ tokenColor = toColor "#FFFD9C" })
---     , (StringTok, defStyle{ tokenColor = toColor "#2BFF87" })
---     , (CommentTok, defStyle{ tokenColor = toColor "#A1FFCA", tokenItalic = True })
---     , (OtherTok, defStyle{ tokenColor = toColor "#2BA0CB" })
---     , (AlertTok, defStyle{ tokenColor = toColor "#98D3E9", tokenBold = True })
---     , (FunctionTok, defStyle{ tokenColor = toColor "#872BFF" })
---     , (ErrorTok, defStyle{ tokenColor = toColor "#CCA6FF", tokenBold = True })
---     ]
---   }
-
-
+-- [textual substitution]
