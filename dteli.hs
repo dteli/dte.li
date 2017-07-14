@@ -30,7 +30,7 @@ main = hakyllWith configuratie $ do
         route    idRoute
         compile  copyFileCompiler
 
-    match ("robots.txt" .||. "favicon.ico") $ do
+    match ("robots.txt" .||. "favicon.ico" .||. "res/res0.1.html" .||. "res/res.css") $ do
         route    idRoute
         compile  copyFileCompiler
 
@@ -99,7 +99,7 @@ main = hakyllWith configuratie $ do
                 >>= loadAndApplyTemplate "templates/sitepage.html" siteContext
                 >>= relativizeUrls      
 
-    match ("index.html" .||. "contact.html") $ do
+    match ("index.html" .||. "contact.html" .||. "res/res_if.html") $ do
         route      idRoute
         compile  $ do
             getResourceBody
