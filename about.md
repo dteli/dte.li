@@ -6,7 +6,7 @@ sector: self
 
 # about
 
-![](images/jeju.png "me")
+![](img/jeju.png "me")
 
 <p>I am currently
 <script>document.write((((new Date().getTime()/1000)-614944800.0)/31557600).toFixed(3))</script>

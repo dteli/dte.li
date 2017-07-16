@@ -247,10 +247,32 @@ article {
 /*   } */
 main.index {
   /* background-image: url("https://dl.dropboxusercontent.com/u/2280103/dteli/images/grounds/DSC05275r1.JPG"); */
-  background-image: url("https://dl.dropboxusercontent.com/u/2280103/dteli/images/grounds/r1ground.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
+  main.index #groundcap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    direction: rtl;
+    background-color: rgba(0, 0, 0, 0.5); }
+    main.index #groundcap h3 {
+      margin: 0;
+      padding: 0.4rem 0;
+      font-style: italic;
+      color: #f8f8f8;
+      text-shadow: -0.1rem 0.1rem 0 #f74d4d; }
+    main.index #groundcap h4, main.index #groundcap h5 {
+      margin: 0.4rem 0;
+      padding: 0;
+      color: #f8f8f8;
+      direction: ltr;
+      text-align: right; }
+    main.index #groundcap h5 {
+      font-size: 80%;
+      font-weight: normal; }
 
 main.core h1 {
   text-shadow: -0.2rem 0.2rem 0 #f74d4d; }

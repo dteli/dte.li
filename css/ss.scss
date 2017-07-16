@@ -405,10 +405,42 @@ article {
 main.index {
 
   /* background-image: url("https://dl.dropboxusercontent.com/u/2280103/dteli/images/grounds/DSC05275r1.JPG"); */
-  background-image: url("https://dl.dropboxusercontent.com/u/2280103/dteli/images/grounds/r1ground.JPG");
+//  background-image: url("https://dl.dropboxusercontent.com/u/2280103/dteli/images/grounds/r1ground.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  #groundcap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    direction: rtl;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    h3 {
+      margin: 0;
+      padding: 0.4rem 0;
+      font-style: italic;
+      color: $k01;
+      text-shadow: -0.1rem 0.1rem 0 $k0U;
+    }
+
+    h4, h5 {
+      margin: 0.4rem 0;
+      padding: 0;
+      color: $k01;
+      direction: ltr;
+      text-align: right;
+    }
+
+    h5 {
+      font-size: 80%;
+      font-weight: normal;
+      // font-style: italic;
+    }
+  }
 }
 
 

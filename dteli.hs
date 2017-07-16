@@ -26,7 +26,11 @@ main :: IO ()
 main = hakyllWith configuratie $ do
 
 
-    match ("images/*" .||. "aanvullend/*") $ do
+    match ("img/*.png" .||. "img/grounds/*.JPG" .||. "img/grounds/grndex.json") $ do
+        route    idRoute
+        compile  copyFileCompiler
+
+    match ("aanvullend/*") $ do
         route    idRoute
         compile  copyFileCompiler
 

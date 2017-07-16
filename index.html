@@ -1,6 +1,46 @@
 
-<!-- <h1>dte.li</h1> -->
+
+<!-- <script type="text/javascript" src="img/grounds/grndex.json"></script> -->
+<script>
+ var requrl = "https://www.dte.li/img/grounds/grndex.json";
+ var req = new XMLHttpRequest();
+ req.open("GET", requrl);
+ req.responseType = "json";
+ req.send();
+
+ req.onload = function () {
+   var grndex = req.response;
+   var g = selectLiveGround(grndex);
+   changeMainGround(g.id);
+   
+   var cap1 = document.getElementById("cap1");
+   var cap2 = document.getElementById("cap2");
+   var cap3 = document.getElementById("cap3");
+   cap1.innerHTML = g.cap;
+   cap2.innerHTML = g.loc;
+   cap3.innerHTML = g.lat+"°, "+g.lon+"°";
+ };
+
+ function selectLiveGround (grndex) {
+   var lives = grndex.live;
+   return lives[Math.floor(Math.random() * lives.length)];
+ };
+
+ function changeMainGround (gfile) {
+   var m = document.querySelector("main");
+   m.style.backgroundImage = "url(img/grounds/"+gfile+".JPG)";
+ }
+</script>
+
 
 <h1><em>Hello, I'm Eli T. Drumm, and this is my website.</em></h1>
-<!-- class="indexh3" -->
+
+
+<div id="groundcap">
+  <h3>and this is a picture I took</h3>
+  <h4 id="cap1"></h4>
+  <h4 id="cap2"></h4>
+  <h4 id="cap3"></h4>
+  <h5>(refresh for another)</h5>
+</div>
 
