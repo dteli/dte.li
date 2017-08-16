@@ -139,6 +139,26 @@
 
     article {
 
+      font-size: 2rem;
+
+      h2 {
+        max-width: 90%;
+      }
+      
+      p {
+        max-width: 90%;
+        font-size: 2rem;
+      }
+
+      ul {
+        
+        max-width: 80%;
+
+        li {
+          font-size: 2rem;
+        } 
+      }
+      
       figure {
         max-width: none;
         margin: 2rem 0;

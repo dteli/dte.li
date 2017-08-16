@@ -241,7 +241,7 @@ article {
   // width: calc(800px - 1.6rem);
   // width: 80rem;
   margin: 2rem auto 4rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
 
 
   h1 {
@@ -253,7 +253,7 @@ article {
   //   }
 
   h2 {
-    max-width: 80rem;
+    max-width: 60rem;
     margin: 2.4rem auto 1rem;
     padding: 0 2rem 0;
     font-size: 3.6rem;
@@ -272,15 +272,16 @@ article {
 
 
   p {
-    max-width: 80rem;
+    max-width: 60rem;
     margin: 1rem auto 1rem;
     padding: 0.4rem 1.6rem 0.4rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    line-height: 140%;
   }
 
 
   ul {
-    max-width: 75rem;
+    max-width: 55rem;
     margin: 1rem auto 1rem;
     padding: 0 1rem 0 2.2rem;
     list-style-type: none;
@@ -289,6 +290,8 @@ article {
       margin-bottom: 1rem;
       padding-left: 2.2rem;
       text-indent: -2.2rem;
+      font-size: 2rem;
+      line-height: 140%;
     }
 
     li:before {
