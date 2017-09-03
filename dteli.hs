@@ -191,9 +191,9 @@ pandocReaderOptions = defaultHakyllReaderOptions
 pandocWriterOptions :: Pdo.WriterOptions
 pandocWriterOptions = defaultHakyllWriterOptions
                       { Pdo.writerHtml5 = True
-                      , Pdo.writerHTMLMathMethod = Pdo.MathJax ""
+                      , Pdo.writerHTMLMathMethod = Pdo.MathJax "https://cdn.mathjax.org/mathjax/2.7-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
                       -- , writerHTMLMathMethod = MathJax "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-                      -- , writerExtensions =  ...
+                      , Pdo.writerExtensions = Pdo.pandocExtensions
                       }
 
 -- -----------------------------------------------------------

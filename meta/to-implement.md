@@ -16,7 +16,9 @@ sector: site
     - improve selection/delivery method
     - captions
 - a few more color-thematic flourishes
-- integration with (e.g.) Twitter, last.fm
+- interfacing with other profiles
+    - Twitter
+    - last.fm
 - fix (and normalize) unordered list formatting and bulletset
 - palette page enhancements (need slick swatch animations)
 
@@ -25,8 +27,9 @@ sector: site
 
 ## content
 
-
+- location history / personal tripography
 - photos
 - videos
 - mixes
 - primes
+- acknowledgements
