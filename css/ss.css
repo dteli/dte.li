@@ -520,10 +520,12 @@ footer#thelastword {
   */ }
 @media (max-width: 900px) {
   body {
-    flex-direction: column; }
+    flex-direction: column;
+    display: block; }
 
   main {
-    position: relative; }
+    position: relative;
+    flex: 1 0 70%; }
     main h1 {
       font-size: 10vw; }
     main h2 {
@@ -543,7 +545,8 @@ footer#thelastword {
       display: none; }
 
   div#asider {
-    width: 100%; }
+    width: 100%;
+    position: static; }
 
   .postlist h2 {
     font-size: 3rem; }
@@ -553,6 +556,7 @@ footer#thelastword {
 
   div#overasider {
     position: static;
+    flex: 1 1 30%;
     height: auto;
     width: 100%; }
 
@@ -560,7 +564,8 @@ footer#thelastword {
     display: none; }
 
   article {
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin-top: 0; }
     article h2 {
       max-width: 90%; }
     article p {
