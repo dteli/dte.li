@@ -232,6 +232,12 @@ main {
 
   }
 
+  twitterwidget {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
 }
 
 
@@ -254,7 +260,7 @@ article {
 
   h2 {
     max-width: 60rem;
-    margin: 2.4rem auto 1rem;
+    margin: 4rem auto 1rem;
     padding: 0 2rem 0;
     font-size: 3.6rem;
   }
@@ -262,7 +268,6 @@ article {
 
 
   h3 {
-    margin-top: 0;
     margin-bottom: 2rem;
 
     + h2 {
