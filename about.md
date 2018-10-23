@@ -20,7 +20,7 @@ I studied cognitive science and philosophy (of logic, science) at Indiana Univer
 from '07 through '011.
 From mid-2013 to early '016 I lived in the Netherlands
 pursuing a [MSc in Logic][] at the University of Amsterdam,
-which I recently completed ([relevant reading for all your free time](https://dl.dropboxusercontent.com/u/2280103/dteli/rmtc.pdf "RMTC")).
+which I recently completed ([relevant reading for all your free time](aanvullend/rmtc.pdf "RMTC")).
 
 
 After returning to the US I lived in the Ithaca, NY area for awhile; currently I'm back around Indianapolis until I embark on Whatever Comes Next.
@@ -28,7 +28,7 @@ After returning to the US I lived in the Ithaca, NY area for awhile; currently I
 
 
 I have a cat named Atsuo Toggle.
-![](https://dl.dropboxusercontent.com/u/2280103/dteli/images/a4.gif "A.T."){.atgiftest}
+![](img/a4.gif "A.T."){.atgiftest}
 
 <!-- {.leftsideimg} -->
 
