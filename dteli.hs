@@ -75,6 +75,14 @@ main = hakyllWith configuratie $ do
     -- match ("lps/*.md") $ do
     --   route $ setExtension "html"
     --   compile $ do
+    --     lps <- recentFirst =<< recentLPs
+    --     let lpContextPlusPosts =
+    --             listField "lps" lpContext (return lps)
+    --          <> lpContext
+    --     pandocCompilerWith pandocReaderOptions pandocWriterOptions
+    --       >>= loadAndApplyTemplate "templates/lpcontent.html" lpContextPlusPosts
+    --       >>= loadAndApplyTemplate "templates/lppage.html" lpContextPlusPosts
+    --       >>= relativizeUrls        
         
 
 
@@ -128,7 +136,7 @@ main = hakyllWith configuratie $ do
 -- ===========================================================
 
 globalContext :: Context String
-globalContext = field "lpUrl" (\_ -> latestPostUrl)
+globalContext = field "lpUrl" (const latestPostUrl)
     <> defaultContext
 
 staticContext :: Context String
@@ -141,8 +149,8 @@ staticContext = constField "themecolor" "#F74D4D"  -- red
 --     <> constField "sector" "yield"
 --     <> globalContext
 
--- vinylContext :: Context String
--- vinylContext = constField "themecolor" "#FFED47"  -- yellow
+-- lpContext :: Context String
+-- lpContext = constField "themecolor" "#FFED47"  -- yellow
 --     <> dateField "date" "%Y %B %e"
 --     <> constField "sector" "vinyl"
 --     <> globalContext
@@ -159,7 +167,7 @@ siteContext = constField "themecolor" "#2BA0CB"  -- blue
     <> globalContext
 
 postContext :: Context String
-postContext = field "entries" (\_ -> recentPostList)
+postContext = field "entries" (const recentPostList)
     <> dateField "date" "%Y %B %e"
     <> constField "themecolor" "#872BFF"  -- purple
     <> constField "sector" "posts"
@@ -187,9 +195,19 @@ recentPostList = do
 latestPostUrl :: Compiler String
 latestPostUrl = do
     latestPost <- fmap (return . head) . recentFirst =<< recentPosts
-    itemTpl <- loadBody "templates/posturl.html"
+    itemTpl <- loadBody "templates/bareurl.html"
     lpUrl <- applyTemplateList itemTpl defaultContext latestPost
     return lpUrl
+
+
+
+-- recentLPs :: Compiler [Item String]
+
+-- recentLPList :: Compiler String
+
+-- latestLPUrl :: Compiler String
+
+
 
 -- ==========================================================
 
