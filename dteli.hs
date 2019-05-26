@@ -40,7 +40,7 @@ main = hakyllWith configuratie $ do
         route    idRoute
         compile  copyFileCompiler
 
-    match "templates/*" $ compile $ templateCompiler
+    match "templates/*" $ compile templateCompiler
 
 
 
