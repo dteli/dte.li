@@ -291,7 +291,15 @@ article footer {
   border-top: 0.25rem solid #cccccc;
   background-color: inherit;
 }
-
+article.lp h2.inheader {
+  margin: 1rem auto 0;
+  max-width: 80rem;
+  font-size: 4.6rem;
+}
+article.lp h3.links {
+  margin: 4rem auto;
+  text-align: center;
+}
 /* .post { */
 /*     h1 { */
 /*       text-shadow: -0.2rem 0.2rem 0 $k0Z; */
@@ -340,17 +348,23 @@ main.yield h1 {
   text-shadow: -0.2rem 0.2rem 0 #ff872b;
 }
 
+main.lp h1 {
+  text-shadow: -0.2rem 0.2rem 0 #ffed47;
+}
+
+main.listbank h1 {
+  text-shadow: -0.2rem 0.2rem 0 #2bff87;
+}
+
 main.site h1 {
   text-shadow: -0.2rem 0.2rem 0 #2ba0cb;
 }
 
-main.post {
-  /* audio { box-shadow: -0.2rem 0.2rem 0 $k0Z; } */
-}
 main.post h1 {
   text-shadow: -0.2rem 0.2rem 0 #872bff;
 }
 
+/* audio { box-shadow: -0.2rem 0.2rem 0 $k0Z; } */
 div.buttonbox {
   max-width: 80rem;
   display: flex;
@@ -403,6 +417,32 @@ div.buttonbox a:hover {
 }
 #asider #sitenav a:hover {
   color: #2ba0cb;
+}
+#asider #lplist h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-style: italic;
+}
+#asider #lplist h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+#asider #lplist a {
+  margin: 0;
+}
+#asider #lplist a:hover {
+  color: #ffed47;
+}
+#asider #lplist ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#asider #lplist li {
+  margin-bottom: 2rem;
 }
 #asider #postlist h2 {
   margin: 0;

@@ -1,7 +1,7 @@
 ---
 title: about
 author: Eli T. Drumm
-sector: self
+sector: static
 ---
 
 # about

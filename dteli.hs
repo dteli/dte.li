@@ -34,6 +34,7 @@ main = hakyllWith configuratie $ do
     match ("img/*.png" .||. "img/*.jpg" .||. "img/*.gif"
            .||. "img/grounds/*.JPG" .||. "img/grounds/grndex.json"
            .||. "img/posts/*"
+           .||. "img/lps/*"
            .||. "aanvullend/*"
            .||. "robots.txt" .||. "favicon.ico"
            .||. "res/res0.1.html" .||. "res/res.css") $ do
@@ -72,17 +73,17 @@ main = hakyllWith configuratie $ do
 
 
 
-    -- match ("lps/*.md") $ do
-    --   route $ setExtension "html"
-    --   compile $ do
-    --     lps <- recentFirst =<< recentLPs
-    --     let lpContextPlusPosts =
-    --             listField "lps" lpContext (return lps)
-    --          <> lpContext
-    --     pandocCompilerWith pandocReaderOptions pandocWriterOptions
-    --       >>= loadAndApplyTemplate "templates/lpcontent.html" lpContextPlusPosts
-    --       >>= loadAndApplyTemplate "templates/lppage.html" lpContextPlusPosts
-    --       >>= relativizeUrls        
+    match ("lps/*.md") $ do
+      route $ setExtension "html"
+      compile $ do
+        lps <- recentFirst =<< recentLPs
+        let lpContextPlusPosts =
+                listField "lps" lpContext (return lps)
+             <> lpContext
+        pandocCompilerWith pandocReaderOptions pandocWriterOptions
+          >>= loadAndApplyTemplate "templates/lpcontent.html" lpContextPlusPosts
+          >>= loadAndApplyTemplate "templates/lppage.html" lpContextPlusPosts
+          >>= relativizeUrls        
         
 
 
@@ -134,9 +135,11 @@ main = hakyllWith configuratie $ do
 
 
 -- ===========================================================
+-- Contexts
 
 globalContext :: Context String
-globalContext = field "lpUrl" (const latestPostUrl)
+globalContext = field "lpUrl" (const $ fmap itemBody latestPostUrl)
+    <> field "lLPUrl" (const $ fmap itemBody latestLPUrl)
     <> defaultContext
 
 staticContext :: Context String
@@ -149,11 +152,12 @@ staticContext = constField "themecolor" "#F74D4D"  -- red
 --     <> constField "sector" "yield"
 --     <> globalContext
 
--- lpContext :: Context String
--- lpContext = constField "themecolor" "#FFED47"  -- yellow
---     <> dateField "date" "%Y %B %e"
---     <> constField "sector" "vinyl"
---     <> globalContext
+lpContext :: Context String
+lpContext = field "impressions" (const recentLPList)
+    <> dateField "date" "%Y %B %e"
+    <> constField "themecolor" "#FFED47"  -- yellow
+    <> constField "sector" "vinyl"
+    <> globalContext
 
 -- protobankContext :: Context String
 -- protobankContext = field "listlist" (\_ ->  protobankIndex  )
@@ -176,6 +180,7 @@ postContext = field "entries" (const recentPostList)
 
 
 -- ===========================================================
+-- Compilers for posts, lists
 
 -- thank you Danny Su for some of these
 -- (http://dannysu.com/2013/03/20/hakyll-4/)
@@ -189,23 +194,31 @@ recentPostList :: Compiler String
 recentPostList = do
     posts <- recentFirst =<< recentPosts
     itemTpl <- loadBody "templates/postli.html"
-    list <- applyTemplateList itemTpl postContext posts
-    return list
+    applyTemplateList itemTpl postContext posts
 
-latestPostUrl :: Compiler String
+latestPostUrl :: Compiler (Item String)
 latestPostUrl = do
-    latestPost <- fmap (return . head) . recentFirst =<< recentPosts
-    itemTpl <- loadBody "templates/bareurl.html"
-    lpUrl <- applyTemplateList itemTpl defaultContext latestPost
-    return lpUrl
+    latestPost <- fmap head . recentFirst =<< recentPosts
+    loadAndApplyTemplate "templates/bareurl.html" defaultContext latestPost
 
 
 
--- recentLPs :: Compiler [Item String]
 
--- recentLPList :: Compiler String
+recentLPs :: Compiler [Item String]
+recentLPs = do
+  identifiers <- getMatches "lps/*.md"
+  return [Item identifier "" | identifier <- identifiers]
 
--- latestLPUrl :: Compiler String
+recentLPList :: Compiler String
+recentLPList = do
+  impressions <- recentFirst =<< recentLPs
+  itemTpl <- loadBody "templates/lpli.html"
+  applyTemplateList itemTpl lpContext impressions
+
+latestLPUrl :: Compiler (Item String)
+latestLPUrl = do
+  latestImpression <- fmap head . recentFirst =<< recentLPs
+  loadAndApplyTemplate "templates/bareurl.html" defaultContext latestImpression
 
 
 

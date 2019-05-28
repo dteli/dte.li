@@ -400,7 +400,35 @@ article {
     background-color: inherit;
   }
 
+
+
+
+
+// Specific settings for different classes of article
+
+  &.lp {
+
+    h2.inheader {
+      margin: 1rem auto 0;
+      max-width: 80rem;
+      font-size: 4.6rem;
+    }
+
+    h3.links {
+      margin: 4rem auto;
+      text-align: center;
+    }
+  }
+
+  &.post {
+
+
+  }
+  
+  
 }
+
+
 
 
 
@@ -453,23 +481,16 @@ main.index {
 }
 
 
+// h1 settings for each sector (shadow the same, color different)
 
-main.core {
-  h1 {
-    text-shadow: -0.2rem 0.2rem 0 $k0U;
-  }
-}
+main.core {     h1 { text-shadow: -0.2rem 0.2rem 0 $k0U; } }
+main.yield {    h1 { text-shadow: -0.2rem 0.2rem 0 $k0V; } }
+main.lp {       h1 { text-shadow: -0.2rem 0.2rem 0 $k0W; } }
+main.listbank { h1 { text-shadow: -0.2rem 0.2rem 0 $k0X; } }
+main.site {     h1 { text-shadow: -0.2rem 0.2rem 0 $k0Y; } }
+main.post {     h1 { text-shadow: -0.2rem 0.2rem 0 $k0Z; } }
 
-main.yield { h1 { text-shadow: -0.2rem 0.2rem 0 $k0V; } }
-
-main.site { h1 { text-shadow: -0.2rem 0.2rem 0 $k0Y; } }
-
-main.post {
-  h1 {
-    text-shadow: -0.2rem 0.2rem 0 $k0Z;
-  }
-  /* audio { box-shadow: -0.2rem 0.2rem 0 $k0Z; } */
-}
+/* audio { box-shadow: -0.2rem 0.2rem 0 $k0Z; } */
 
 
 div.buttonbox {
@@ -544,7 +565,42 @@ div.buttonbox {
 
   #sitenav { a:hover { color: $k0Y; } }
   
+  #lplist {
 
+    h2 {
+      margin: 0;
+      padding: 0;
+      font-size: 2.4rem;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+
+    a {
+      margin: 0;
+    }
+
+    a:hover {
+      color: $k0W;
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-bottom: 2rem;
+    }
+        
+  }
+    
   #postlist {
 
     h2 {
