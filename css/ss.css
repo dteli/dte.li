@@ -241,7 +241,7 @@ article pre {
 article pre code {
   display: block;
   max-width: 80rem;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 article blockquote {
@@ -588,6 +588,28 @@ footer#thelastword p {
 
 .bgc-post {
   background-color: #872bff;
+}
+
+.sourceCode .st {
+  color: #f74d4d;
+}
+.sourceCode .dt {
+  color: #484879;
+}
+.sourceCode .fu {
+  color: #699abc;
+}
+.sourceCode .kw {
+  color: #3ca380;
+}
+.sourceCode .op {
+  color: #ff8247;
+}
+.sourceCode .ot {
+  color: #6767ae;
+}
+.sourceCode .co {
+  color: #3f5c70;
 }
 
 .bk0U {

@@ -31,3 +31,35 @@
 //   font-variant: small-caps;
 // }
 
+
+
+
+//==========================
+// code block styling
+
+// #abaeb3
+// #3f5c70 // comment
+// #3ca380
+// #699abc
+// #484879
+// #6767ae
+// #ff8247
+// #f74d4d
+
+.sourceCode {
+
+  .st { color: #f74d4d }
+
+  .dt { color: #484879 }
+
+  .fu { color: #699abc }
+
+  .kw { color: #3ca380 }
+
+  .op { color: #ff8247 }
+  
+  .ot { color: #6767ae }
+
+  .co { color: #3f5c70 }
+
+}
