@@ -37,7 +37,7 @@ main = hakyllWith configuratie $ do
            .||. "img/lps/*"
            .||. "aanvullend/*"
            .||. "robots.txt" .||. "favicon.ico"
-           .||. "res/res0.1.html" .||. "res/res.css") $ do
+           .||. "res/res.html" .||. "res/res.css") $ do
         route    idRoute
         compile  copyFileCompiler
 
