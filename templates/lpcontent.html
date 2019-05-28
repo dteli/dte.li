@@ -7,7 +7,15 @@
 
   <img src="/img/lps/$id$.jpg" title="$lptitle$"/>
 
-  <h3 class="links"><a href="$lplink$">link</a>&emsp;|&emsp;<a href="$lpdiscogs$">Discogs</a></h3>
+  <h3 class="links">
+    <a href="$lplink$">link</a>
+    &emsp;|&emsp;
+    $if(lpbandcamp)$
+    <a href="$lpbandcamp$">Bandcamp</a>
+    &emsp;|&emsp;
+    $endif$
+    <a href="$lpdiscogs$">Discogs</a>
+  </h3>
 
 
   $body$
