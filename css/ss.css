@@ -31,6 +31,10 @@
 /* $postscolor: rgb(135, 43, 255); */
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,900,900italic|Inconsolata:400,700);
 @import "normalize.css";
+.preload * {
+  transition: none !important;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -400,6 +404,7 @@ div.buttonbox a:hover {
 #asider a {
   /* display: block; */
   /* margin-bottom: 2rem; */
+  transition: color 250ms linear;
 }
 #asider h2 {
   margin: 0 0 0.5em;
@@ -414,6 +419,16 @@ div.buttonbox a:hover {
 }
 #asider #yieldnav a:hover {
   color: #ff872b;
+}
+#asider #yieldnav h5 {
+  margin: 0 0 2rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-size: 80%;
+  color: #cccccc;
+}
+#asider #yieldnav h2 + h5 {
+  margin: 8rem 0 2rem;
 }
 #asider #sitenav a:hover {
   color: #2ba0cb;
@@ -526,10 +541,12 @@ div#overasider {
   color: #060606;
   padding: 2rem;
   margin-top: 1rem;
+  transition: color 250ms linear, text-shadow 250ms linear;
 }
 #nav0 a:hover {
   color: #f8f8f8;
   text-shadow: -0.2rem 0.2rem 0 #060606;
+  transform: 1s;
 }
 
 footer {

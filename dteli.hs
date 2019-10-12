@@ -63,13 +63,13 @@ main = hakyllWith configuratie $ do
                 >>= relativizeUrls
 
 
-    -- match ("yield/*.md") $ do             -- yindex, scrawls, ..  mixes, tapas
-    --     route    $ setExtension "html"
-    --     compile  $ do
-    --         pandocCompilerWith pandocReaderOptions pandocWriterOptions
-    --             >>= loadAndApplyTemplate "templates/barecontent.html" yieldContext
-    --             >>= loadAndApplyTemplate "templates/yieldpage.html" yieldContext
-    --             >>= relativizeUrls
+    match ("yield/*.md") $ do             -- yindex, scrawls, ..  mixes, tapas
+        route    $ setExtension "html"
+        compile  $ do
+            pandocCompilerWith pandocReaderOptions pandocWriterOptions
+                >>= loadAndApplyTemplate "templates/barecontent.html" yieldContext
+                >>= loadAndApplyTemplate "templates/yieldpage.html" yieldContext
+                >>= relativizeUrls
 
 
 
@@ -147,10 +147,10 @@ staticContext = constField "themecolor" "#F74D4D"  -- red
     <> constField "sector" "static"
     <> globalContext
 
--- yieldContext :: Context String
--- yieldContext = constField "themecolor" "#FF872B"  -- orange
---     <> constField "sector" "yield"
---     <> globalContext
+yieldContext :: Context String
+yieldContext = constField "themecolor" "#FF872B"  -- orange
+    <> constField "sector" "yield"
+    <> globalContext
 
 lpContext :: Context String
 lpContext = field "impressions" (const recentLPList)

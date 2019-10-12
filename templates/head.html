@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="preload">
 
 <head>
   <meta charset="utf-8">
@@ -9,4 +9,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content=$themecolor$>
   <link rel="stylesheet" href="/css/ss.css">
+
+  <!-- http://joshfrankel.me/blog/prevent-css-transitions-on-page-load-with-es6/ -->
+  <script type="text/javascript">
+   document.addEventListener("DOMContentLoaded",function(){
+     let node = document.querySelector('.preload');
+     node.classList.remove('preload');
+   });
+  </script>
+  
 </head>

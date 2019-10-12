@@ -33,14 +33,6 @@ I have a cat named Atsuo Toggle.
 <!-- {.leftsideimg} -->
 
 
-<!-- Recently my partner and I adopted a puppy named Archie -->
-<!-- (after [this guy](https://en.wikipedia.org/wiki/Archie_Green "Archie") -->
-<!-- and [this guy](http://memory-alpha.wikia.com/wiki/Jonathan_Archer "Archer") -->
-<!-- and [this distro](https://www.archlinux.org/ "Arch")). -->
-<!-- He's a fluffier-than-average lab mix and he would love to meet you if you're in the neighborhood. -->
-<!-- ![](https://dl.dropboxusercontent.com/u/2280103/dteli/images/ar00a.gif "A.W."){.atgiftest} -->
-
-
 
 
 
