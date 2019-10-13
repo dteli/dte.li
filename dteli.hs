@@ -28,7 +28,7 @@ main = hakyllWith configuratie $ do
     match "css/*.css" $ do
         route       idRoute
         compile   $ getResourceString
-                 >>= withItemBody (unixFilter "/home/winfield/.node_modules/bin/postcss" ["--use", "autoprefixer"])
+                 >>= withItemBody (unixFilter "/usr/bin/postcss" ["--use", "autoprefixer"])
                  >>= return . fmap compressCss
 
     match ("img/*.png" .||. "img/*.jpg" .||. "img/*.gif"

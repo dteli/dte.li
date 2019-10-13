@@ -243,7 +243,33 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
+
+  // this was in article
+  // might move more up to this level (main)
+  blockquote {
+    display: block;
+    margin: 2rem 0 3rem;
+    padding: 4rem;
+    width: 100%;
+    color: $k01;
+    background-color: $k00;
+    font-style: italic;
+    font-size: 2.2rem;
+    // border-left: 0.5rem solid $k01;
+
+    p {
+      display: block;
+      max-width: 80rem;
+      margin: 0 auto;
+      padding: 0 2rem;
+
+      &+p {
+	margin-top: 2rem;
+      }
+    }
+
+  }
 
 }
 
@@ -344,25 +370,7 @@ article {
   }
 
 
-  blockquote {
-    display: block;
-    margin: 2rem 0;
-    padding: 2rem;
-    width: 100%;
-    color: $k01;
-    background-color: $k00;
-    font-style: italic;
-    font-size: 2.2rem;
-    // border-left: 0.5rem solid $k01;
 
-    p {
-      display: block;
-      max-width: 80rem;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-  }
 
 
   .fullbleed {
@@ -547,7 +555,7 @@ div.buttonbox {
   a {
     /* display: block; */
     /* margin-bottom: 2rem; */
-    transition: color 250ms linear;
+    transition: color 200ms linear;
   }
 
   h2 {
@@ -726,7 +734,7 @@ div#overasider {
     color: $k00;
     padding: 2rem;
     margin-top: 1rem;
-    transition: color 250ms linear, text-shadow 250ms linear;
+    transition: color 200ms linear, text-shadow 200ms linear;
 
     &:hover {
       //box-shadow: -0.4rem 0.4rem 0 0 $k01;

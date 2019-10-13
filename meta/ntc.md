@@ -49,7 +49,7 @@ but yeah, this is my general tool-platform-technology suite.
 
 ------------
 
-*This is version **3.8** of dte.li (qua website).*
+*This is version **4.0** of dte.li (qua website).*
 
 
 <!--
