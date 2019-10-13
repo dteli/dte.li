@@ -9,20 +9,16 @@
 
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,900,900italic|Inconsolata:400,700);
 
-// ==============================================
+@import "normalize.css";
 
+// ==============================================
 
 // http://joshfrankel.me/blog/prevent-css-transitions-on-page-load-with-es6/
 .preload * {
   transition: none !important;;
 }
 
-
-
 // ==============================================
-
-
-@import "normalize.css";
 
 
 html {
