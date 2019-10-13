@@ -1,0 +1,9 @@
+*~
+_*/*
+.*
+*/.*
+*.map
+drafts/
+cabal.sandbox.config
+dist/
+dteli

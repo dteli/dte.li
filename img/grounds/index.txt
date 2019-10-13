@@ -1,0 +1,55 @@
+{ "live": [
+    {"id": "1577",
+     "lat": "51.445", "lon": "3.595",
+     "loc": "Vlissingen, Netherlands",
+     "cap": "train station"},
+    
+    {"id": "1591",
+     "lat": "51.442", "lon": "5.480",
+     "loc": "Eindhoven, Netherlands",
+     "cap": "stationsplein"},
+    
+    {"id": "1597",
+     "lat": "52.353", "lon": "4.948",
+     "loc": "Amsterdam, Netherlands",
+     "cap": "Amsterdam Science Park train station"},
+    
+    {"id": "3664",
+     "lat": "60.30", "lon": "24.96",
+     "loc": "Vantaa, Finland",
+     "cap": "Helsinki airport train station"},
+    
+    {"id": "5275",
+     "lat": "59.364", "lon": "26.339",
+     "loc": "Tõrremäe, Estonia",
+     "cap": "parking lot of RIMI"},
+    
+    {"id": "5399",
+     "lat": "59.42", "lon": "24.80",
+     "loc": "Tallinn, Estonia",
+     "cap": "Tallinn airport"},
+    
+    {"id": "6450",
+     "lat": "42.441", "lon": "-76.033",
+     "loc": "Marathon, NY, USA",
+     "cap": "Sunoco parking lot"},
+    
+    {"id": "9658",
+     "lat": "52.345", "lon": "4.963",
+     "loc": "Diemen, Netherlands",
+     "cap": "Martin Luther Kinglaan"},
+    
+    {"id": "9711",
+     "lat": "52.35", "lon": "4.89",
+     "loc": "Amsterdam, Netherlands",
+     "cap": "just some entry-stairs along a street"},
+    
+    {"id": "9761",
+     "lat": "50.851", "lon": "5.691",
+     "loc": "Maastricht, Netherlands",
+     "cap": "Stadhuis van Maastricht"},
+    
+],
+  "inprog": [
+  ]
+}
