@@ -93,7 +93,7 @@ main {
     // text-shadow: -2px 2px 0 $staticcolor;
   }
 
-  h2 {  // currently not different from article h2..
+  h2 { 
     max-width: 80rem;
     margin: 2.4rem auto 1rem;
     padding: 0 2rem 0;
@@ -269,6 +269,16 @@ main {
       }
     }
 
+  }
+
+
+  &.yield {
+
+    h2 {
+      margin: 4rem auto 0;
+    }
+
+    
   }
 
 }

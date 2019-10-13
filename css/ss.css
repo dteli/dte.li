@@ -202,6 +202,9 @@ main blockquote p {
 main blockquote p + p {
   margin-top: 2rem;
 }
+main.yield h2 {
+  margin: 4rem auto 0;
+}
 
 article {
   margin: 2rem auto 4rem;

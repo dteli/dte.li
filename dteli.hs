@@ -35,6 +35,7 @@ main = hakyllWith configuratie $ do
            .||. "img/grounds/*.JPG" .||. "img/grounds/grndex.json"
            .||. "img/posts/*"
            .||. "img/lps/*"
+           .||. "img/yield/*"
            .||. "aanvullend/*"
            .||. "robots.txt" .||. "favicon.ico"
            .||. "res/res.html" .||. "res/res.css") $ do

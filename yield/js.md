@@ -1,9 +1,9 @@
 
 # js projects
 
-## [discsearcher]()
+## [discsearcher](https://dteli.github.io/discsearcher/)
 
-photo + link
+![the search pane](/img/yield/discsearcher.png)
 
 A webapp to pull information from Discogs via an API and display it aesthetically.
 
