@@ -13,7 +13,7 @@ Some of my music is available on my [Soundcloud]().
 All of it is currently available on [Bandcamp](https://etdr.bandcamp.com/).
 
 
-## albums
+## albums {#albums-list}
 
 ![](/img/yield/music/services-minus.jpg)
 *Services Minus* (2019)&emsp;𝅘𝅥𝅮&emsp;[Bandcamp](https://etdr.bandcamp.com/album/services-minus)
@@ -28,7 +28,7 @@ All of it is currently available on [Bandcamp](https://etdr.bandcamp.com/).
 *It's Me* (2018)&emsp;𝅘𝅥𝅮&emsp;[Bandcamp](https://etdr.bandcamp.com/album/its-me)
 
 
-## singles & EPs
+## singles & EPs {#singles-eps-list}
 
 ![](/img/yield/music/wanna-die.jpg) 
 *Wanna Die* (2018)&emsp;𝅘𝅥𝅮&emsp;[Bandcamp](https://etdr.bandcamp.com/album/wanna-die), [Soundcloud](https://soundcloud.com/dteli/sets/wanna-die)

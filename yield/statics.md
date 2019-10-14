@@ -4,24 +4,23 @@
 
 
 
-## static layout assignment
+## "Twelve Forty-Nine Academy" {#twelve-forty-nine}
 
 picture
 
 description
 
 
-## css creature
-
-place here
 
 
-## my old resume
+## [my old resume](/rescssume/res.html) {#old-resume}
 
-in css
+Prior to reworking my resume completely (v5.0), I maintained a version both in Word and in HTML/CSS.
+CSS isn't used for print layouts very often but it can be and this was a lesson in how to do it.
 
 
-## previous versions of this site
+
+## previous versions of this site {#old-dteli-versions}
 
 ![v1](/img/yield/oldsites/v1c.png)
 
@@ -29,3 +28,8 @@ in css
 
 ![v3](/img/yield/oldsites/v3c.png)
 
+
+
+## [one blue bird](https://codepen.io/dteli/pen/bGbPYpJ)
+
+And, finally, a simple creature made from CSS and SVGs.

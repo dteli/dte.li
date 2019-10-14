@@ -38,10 +38,24 @@
         padding: 0 4rem;
       }
 
+      .sourceCode {
+	max-width: 60rem;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.6rem;
+      }
+
     }
 
     div#overasider {
       width: 30%;
+    }
+
+    #nav0 {
+      font-size: 2.8rem;
+      a {
+	padding: 1rem;
+      }
     }
 
     footer#thelastword {
@@ -53,6 +67,10 @@
     //   #nav0 {
     //     font-size: 3.2rem;
     //   }
+
+    #asider h2 {
+      font-size: 2.4rem;
+    }
 
     .postlist h2 {
       font-size: 2rem;

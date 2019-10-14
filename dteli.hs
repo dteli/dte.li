@@ -38,7 +38,7 @@ main = hakyllWith configuratie $ do
            .||. "img/yield/*" .||. "img/yield/*/*"
            .||. "aanvullend/*"
            .||. "robots.txt" .||. "favicon.ico"
-           .||. "res/res.html" .||. "res/res.css"
+           .||. "rescssume/res.html" .||. "rescssume/res.css"
            .||. "newres.pdf") $ do
         route    idRoute
         compile  copyFileCompiler
@@ -48,7 +48,7 @@ main = hakyllWith configuratie $ do
 
 
 
-    match ("index.html" .||. "contact.html" .||. "newres.html") $ do
+    match ("index.html" .||. "contact.html" .||. "newres.html" .||. "rescssume/res_if.html") $ do
         route      idRoute
         compile  $ do
             getResourceBody
