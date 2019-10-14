@@ -23,5 +23,9 @@ in css
 
 ## previous versions of this site
 
-pictures
+![v1](/img/yield/oldsites/v1c.png)
+
+![v2](/img/yield/oldsites/v2c.png)
+
+![v3](/img/yield/oldsites/v3c.png)
 
