@@ -35,10 +35,11 @@ main = hakyllWith configuratie $ do
            .||. "img/grounds/*.JPG" .||. "img/grounds/grndex.json"
            .||. "img/posts/*"
            .||. "img/lps/*"
-           .||. "img/yield/*" .||. "img/yield/oldsites/*"
+           .||. "img/yield/*" .||. "img/yield/*/*"
            .||. "aanvullend/*"
            .||. "robots.txt" .||. "favicon.ico"
-           .||. "res/res.html" .||. "res/res.css") $ do
+           .||. "res/res.html" .||. "res/res.css"
+           .||. "newres.pdf") $ do
         route    idRoute
         compile  copyFileCompiler
 
@@ -47,7 +48,7 @@ main = hakyllWith configuratie $ do
 
 
 
-    match ("index.html" .||. "contact.html" .||. "res/res_if.html") $ do
+    match ("index.html" .||. "contact.html" .||. "newres.html") $ do
         route      idRoute
         compile  $ do
             getResourceBody
