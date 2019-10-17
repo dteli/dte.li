@@ -120,6 +120,9 @@ main ul li {
   padding-left: 2.2rem;
   text-indent: -2.2rem;
 }
+main ul li p:first-of-type {
+  display: inline-block;
+}
 main ul li:before {
   content: "◥";
   margin-right: 1rem;

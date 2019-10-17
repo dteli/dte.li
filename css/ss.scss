@@ -145,6 +145,11 @@ main {
       margin-bottom: 1rem;
       padding-left: 2.2rem;
       text-indent: -2.2rem;
+
+      p:first-of-type {
+	display: inline-block;
+      }
+
     }
 
     li:before {
@@ -340,6 +345,7 @@ article {
       text-indent: -2.2rem;
       font-size: 2rem;
       line-height: 140%;
+
     }
 
     li:before {
