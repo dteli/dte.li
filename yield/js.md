@@ -21,7 +21,10 @@ For information about d3, [see here](https://d3js.org/). The projects below are 
 * [**huesha**](https://dteli.github.io/scrawls/d3/huesha/huesha.html)
 
   Displays a multi-stop gradient based on the SHA-1 hash of a message.
+  
+* [**posfetch**](https://dteli.github.io/scrawls/posfetch/index.html)
 
+  Uses an NLTK API to do part-of-speech tagging and display a pie chart of frequencies.
 
 ## [blue badge] {#blue-badge}
 
