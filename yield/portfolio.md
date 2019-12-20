@@ -56,10 +56,12 @@
 	  background-size: cover;
 	}
 	#blue-badge {
-	  background-color: blue;
+	  background: url(../img/yield/staticsjs/eksward.png);
+		background-size: cover;
 	}
 	#red-badge {
-	  background-color: red;
+	  background: url(../img/yield/staticsjs/vloeistof.png);
+		background-size: cover;
 	}
 </style>
 <div class="portfolio-blocks">
