@@ -288,7 +288,25 @@ main {
 
 }
 
+pre {
+  display: block;
+  margin: 2rem 0;
+  padding: 2rem ;
+  width: 100%;
+  color: $k01;
+  background-color: $k00;    // #303030;
 
+  overflow: auto;  // display scrollbar
+  //white-space: pre-wrap;  // wrap pretext
+
+  code {
+    display: block;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+}
 
 article {
 
@@ -365,25 +383,7 @@ article {
   // li { }
 
 
-  pre {
-    display: block;
-    margin: 2rem 0;
-    padding: 2rem ;
-    width: 100%;
-    color: $k01;
-    background-color: $k00;    // #303030;
 
-    overflow: auto;  // display scrollbar
-    //white-space: pre-wrap;  // wrap pretext
-
-    code {
-      display: block;
-      max-width: 80rem;
-      margin: 0 auto;
-      padding: 0;
-    }
-
-  }
 
 
 

@@ -209,6 +209,22 @@ main.yield h2 {
   margin: 4rem auto 0;
 }
 
+pre {
+  display: block;
+  margin: 2rem 0;
+  padding: 2rem;
+  width: 100%;
+  color: #f8f8f8;
+  background-color: #060606;
+  overflow: auto;
+}
+pre code {
+  display: block;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
 article {
   margin: 2rem auto 4rem;
   font-size: 2rem;
@@ -257,21 +273,6 @@ article ul ul {
 }
 article ul ul li:before {
   content: "▹";
-}
-article pre {
-  display: block;
-  margin: 2rem 0;
-  padding: 2rem;
-  width: 100%;
-  color: #f8f8f8;
-  background-color: #060606;
-  overflow: auto;
-}
-article pre code {
-  display: block;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 0;
 }
 article .fullbleed {
   display: block;

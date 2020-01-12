@@ -65,7 +65,7 @@ main = hakyllWith configuratie $ do
                 >>= relativizeUrls
 
 
-    match ("yield/*.md") $ do             -- yindex, scrawls, ..  mixes, tapas
+    match ("yield/*.md" .||. "yield/ds/*.md") $ do             -- yindex, scrawls, ..  mixes, tapas
         route    $ setExtension "html"
         compile  $ do
             pandocCompilerWith pandocReaderOptions pandocWriterOptions

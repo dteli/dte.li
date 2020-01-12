@@ -76,9 +76,9 @@
 
 
 <section class="portfolio-section" id="data">
-## data science
 
-*coming soon*
+## [data science](./ds/ds.html)
+
 
 <!-- <div class="portfolio-blocks"> -->
 <!-- 	<div class="p-block"> -->
