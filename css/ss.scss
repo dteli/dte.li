@@ -288,6 +288,50 @@ main {
 
 }
 
+pre {
+  display: block;
+  margin: 2rem 0;
+  padding: 2rem ;
+  width: 100%;
+  color: $k01;
+  background-color: $k00;    // #303030;
+
+  overflow: auto;  // display scrollbar
+  //white-space: pre-wrap;  // wrap pretext
+
+  code {
+    display: block;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+}
+
+table {
+  margin: 1.4rem auto;
+  border: 2px solid $k02;
+
+  tr {
+    padding: .6rem;
+
+    th {
+      padding: .6rem;
+      color: $k01;
+      background-color: $k00;
+    }
+
+    td {
+      padding: .6rem;
+      border: 1px solid $k02;
+    }
+  }
+
+  tr.even {
+    background-color: $k03;
+
+  }
+}
 
 
 article {
@@ -373,25 +417,7 @@ article {
   // li { }
 
 
-  pre {
-    display: block;
-    margin: 2rem 0;
-    padding: 2rem ;
-    width: 100%;
-    color: $k01;
-    background-color: $k00;    // #303030;
 
-    overflow: auto;  // display scrollbar
-    //white-space: pre-wrap;  // wrap pretext
-
-    code {
-      display: block;
-      max-width: 80rem;
-      margin: 0 auto;
-      padding: 0;
-    }
-
-  }
 
 
 
