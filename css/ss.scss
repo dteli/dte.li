@@ -308,6 +308,32 @@ pre {
 
 }
 
+table {
+  margin: 1.4rem auto;
+  border: 2px solid $k02;
+
+  tr {
+    padding: .6rem;
+
+    th {
+      padding: .6rem;
+      color: $k01;
+      background-color: $k00;
+    }
+
+    td {
+      padding: .6rem;
+      border: 1px solid $k02;
+    }
+  }
+
+  tr.even {
+    background-color: $k03;
+
+  }
+}
+
+
 article {
 
   // width: calc(800px - 1.6rem);

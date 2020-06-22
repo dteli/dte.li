@@ -141,7 +141,7 @@ def group_by_day_of_week(df, method=''):
     return df.groupby('DAY').agg({'INS':'sum','OUTS':'sum'})
 ```
 
-This is comparable to an estimate I found that 4.something *unique* riders use the subway every day, if you assume that plenty of them are commuters. I actually would suspect more people to be commuters, using the subway twice daily, than is indicated by that estimate and our results.
+This is comparable to an estimate I found that 4-point-something million *unique* riders use the subway every day, if you assume that plenty of them are commuters. I actually would suspect more people to be commuters, using the subway twice daily, than is indicated by that estimate and our results.
 The results being (with 0 as Monday):
 
 ```
