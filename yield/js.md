@@ -14,7 +14,7 @@ he publishes in this format.)
 I styled this app after the NYT crossword puzzle solver, which also uses React,
 but trust me, I had to figure out a lot myself. The Across Lite parser itself I'm particularly proud of.
 
-[Client repo](https://github.com/dteli/eksward) and [server repo](https://github.com/dteli/eksward).
+[Client repo](https://github.com/dteli/eksward) and [server repo](https://github.com/dteli/eksserver).
 
 
 ## [vloeistof](https://vloeistof.co/) {#red-badge}
